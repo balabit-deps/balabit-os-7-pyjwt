@@ -1,0 +1,47 @@
+.TH JWT "1" "August 2014" "jwt 0.1" "User Commands"
+.SH NAME
+jwt \- Python implementation of JSON Web Token
+.SH SYNOPSIS
+.B jwt
+[\fI\,options\/\fR] \fI\,input\/\fR
+.SH DESCRIPTION
+Encodes or decodes JSON Web Tokens based on input
+.SH OPTIONS
+.TP
+\fB\-\-version\fR
+show program's version number and exit
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+show this help message and exit
+.TP
+\fB\-n\fR, \fB\-\-no\-verify\fR
+ignore signature verification on decode
+.TP
+\fB\-\-key\fR=\fI\,KEY\/\fR
+set the secret key to sign with
+.TP
+\fB\-\-alg\fR=\fI\,ALG\/\fR
+set crypto algorithm to sign with. default=HS256
+.SH EXAMPLES
+Decoding:
+.P
+jwt \fB\-\-key\fR=\fI\,secret\/\fR json.web.token
+
+jwt \fB\-\-no\-verify\fR json.web.token
+.P
+Encoding requires the key option and takes space separated key/value pairs
+separated by equals (=) as input.
+.P
+Examples:
+
+jwt \fB\-\-key\fR=\fI\,secret\/\fR iss=me exp=1302049071
+
+jwt \fB\-\-key\fR=\fI\,secret\/\fR foo=bar exp=+10
+
+The exp key is special and can take an offset to current Unix time.
+.SH AUTHOR
+Jeff Lindsay <progrium@gmail.com>
+.PP
+This manual page was written by Daniele Tricoli <eriol@mornie.org>, for the
+Debian project (but may be used by others).
+

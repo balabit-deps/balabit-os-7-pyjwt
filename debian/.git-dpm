@@ -1,0 +1,11 @@
+# see git-dpm(1) from git-dpm package
+86d8b1453ed9402b1ef678d53ce545e9c498d17d
+86d8b1453ed9402b1ef678d53ce545e9c498d17d
+86d8b1453ed9402b1ef678d53ce545e9c498d17d
+86d8b1453ed9402b1ef678d53ce545e9c498d17d
+pyjwt_1.5.3+ds1.orig.tar.gz
+968569584722905352a05965d853323b6fa595e0
+37221
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"
